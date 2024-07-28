@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etiquetas complejas</title>
+</head>
+
+<body>
+    <div contenteditable="true">
+        Texto editable
+    </div>
+    <label autofocus contenteditable="true">Editable con fucos de página</label>
+    <button contenteditable="true">Editable para cualquiera</button>
+    <input type="text" spellcheck="true" contenteditable="">
+
+    <details name="acordeon" open>
+        <summary>Titulo summary</summary>
+        <p>Contenido oculto de ese summary</p>
+    </details>
+    <details name="acordeon">
+        <summary>Titulo summary</summary>
+        <p>Contenido oculto de ese summary</p>
+    </details>
+    <details name="acordeon">
+        <summary>Titulo summary</summary>
+        <p>Contenido oculto de ese summary</p>
+    </details>
+
+    <!-- Ejemplo de un dialog modal con js -->
+    <button onclick="dlg.showModal()">Abrir</button>
+    <dialog id="dlg">
+        <button onclick="dlg.close()">X</button>
+        Contenido del dialog
+    </dialog>
+
+    <!-- Orden de como avanzo con tecla tab -->
+    <label for="nombre"></label>
+    <input type="text" id="nombre" tabindex="1" data-nombre="cuando conozco la información">
+
+    <label for="apellido"></label>
+    <input type="text" id="apellido" tabindex="2">
+</body>
+
+</html>
